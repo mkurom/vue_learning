@@ -66,3 +66,14 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+
+### プロジェクト作成時のエラー
+
+```
+Option 'importsNotUsedAsValues' is deprecated and will stop functioning in TypeScript 5.5. Specify compilerOption '"ignoreDeprecations": "5.0"' to silence this error.
+  Use 'verbatimModuleSyntax' instead.ts
+```
+
+tsconfig.node.jsonの`compilerOptions`に`"ignoreDeprecations": "5.0"`を追加
+
