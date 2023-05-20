@@ -3,9 +3,6 @@ import TheWelcome from '../components/TheWelcome.vue'
 import Counter from '../components/Counter.vue'
 import LocalCounter from '../components/LocalCounter.vue'
 
-import { useCounterStore } from '@/stores/counter'
-const store = useCounterStore()
-
 </script>
 
 <template>

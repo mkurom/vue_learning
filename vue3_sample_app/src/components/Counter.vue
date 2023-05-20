@@ -9,4 +9,5 @@ const store = useCounterStore()
   <p>Count:{{ store.doubleCount }}</p>
   <button @click="store.increment">Up</button>
   <button @click="store.decrement">Down</button>
+  <button @click="store.$reset">Reset</button>
 </template>

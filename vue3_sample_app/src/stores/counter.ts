@@ -23,7 +23,11 @@ export const useCounterStore = defineStore('counter', () => {
     count.value--;
   }
 
-  return { count, doubleCount, increment, decrement }
+  function $reset() {
+    count.value = 0
+  }
+
+  return { count, doubleCount, increment, decrement, $reset }
 })
 
 /// option storeの書き方
