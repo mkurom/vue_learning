@@ -77,3 +77,47 @@ Option 'importsNotUsedAsValues' is deprecated and will stop functioning in TypeS
 
 tsconfig.node.jsonの`compilerOptions`に`"ignoreDeprecations": "5.0"`を追加
 
+
+
+# Vue3学習時の注意事項
+
+Veturプラグインを無効化すること
+代わりにVue Language Features (Volar)を有効にする
+
+
+## vue3_sample_app
+
+✔ Project name: … vue3_sample_app
+✔ Add TypeScript? … Yes
+✔ Add JSX Support? … Yes
+✔ Add Vue Router for Single Page Application development? … Yes
+✔ Add Pinia for state management? … Yes
+✔ Add Vitest for Unit Testing? … Yes
+✔ Add an End-to-End Testing Solution? › Cypress
+✔ Add ESLint for code quality? … Yes
+✔ Add Prettier for code formatting? … Yes
+
+state-managment: paina
+
+
+## vue コンポーネントメモ
+
+```<script setup lang="ts">```と書かないと、import先でエラーになる
+
+## pinia memo
+
+### store
+
+defineStoreを使用して、storeを定義する
+
+第一引数に任意のid(string)を、第二引数にsetup関数として、無名関数をかく
+→ returnを書かないといけない
+
+もしくは、option オブジェクトとして、書く(state, getter, actionをMap型（オブジェクト）で書く)
+→オブジェクトで定義しているので、returnの必要はない
+
+
+### 教材
+
+
+https://blog.logrocket.com/complex-vue-3-state-management-pinia/
